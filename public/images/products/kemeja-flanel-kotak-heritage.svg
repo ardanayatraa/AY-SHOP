@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef2f2" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="url(#bgGrad)" />
+  <circle cx="250" cy="230" r="165" fill="#ef4444" opacity="0.12" />
+  <path d="M175 105 L220 92 L250 125 L280 92 L325 105 L375 180 L345 205 L315 165 L315 365 L185 365 L185 165 L155 205 L125 180 Z" fill="#991b1b" stroke="#ef4444" stroke-width="4" stroke-linejoin="round"/><line x1="250" y1="125" x2="250" y2="365" stroke="#fef2f2" stroke-width="3" stroke-dasharray="6 14"/>
+  <text x="250" y="435" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">Kemeja Flanel Kotak Heritage</text>
+  <text x="250" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="11" letter-spacing="3" fill="#94a3b8" text-anchor="middle">AY SHOP COLLECTION</text>
+</svg>

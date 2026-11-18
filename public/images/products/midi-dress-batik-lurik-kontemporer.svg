@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fafaf9" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="url(#bgGrad)" />
+  <circle cx="250" cy="230" r="165" fill="#a8a29e" opacity="0.12" />
+  <path d="M210 95 L235 110 Q250 125 265 110 L290 95 L315 160 L295 190 L355 375 L145 375 L205 190 L185 160 Z" fill="#57534e" stroke="#a8a29e" stroke-width="4" stroke-linejoin="round"/><line x1="205" y1="190" x2="295" y2="190" stroke="#fafaf9" stroke-width="4"/>
+  <text x="250" y="435" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">Midi Dress Batik Lurik Konte...</text>
+  <text x="250" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="11" letter-spacing="3" fill="#94a3b8" text-anchor="middle">AY SHOP COLLECTION</text>
+</svg>

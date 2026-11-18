@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="url(#bgGrad)" />
+  <circle cx="250" cy="230" r="165" fill="#f59e0b" opacity="0.12" />
+  <rect x="160" y="160" width="180" height="190" rx="22" fill="#b45309" stroke="#f59e0b" stroke-width="4"/><path d="M205 160 C205 100 295 100 295 160" fill="none" stroke="#b45309" stroke-width="14" stroke-linecap="round"/><line x1="160" y1="215" x2="340" y2="215" stroke="#fffbeb" stroke-width="3" opacity="0.6"/>
+  <text x="250" y="435" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">Sling Bag Kulit Sintetis Aur...</text>
+  <text x="250" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="11" letter-spacing="3" fill="#94a3b8" text-anchor="middle">AY SHOP COLLECTION</text>
+</svg>

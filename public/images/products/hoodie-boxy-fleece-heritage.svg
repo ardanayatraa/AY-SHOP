@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3f4f6" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="url(#bgGrad)" />
+  <circle cx="250" cy="230" r="165" fill="#4b5563" opacity="0.12" />
+  <path d="M195 95 Q250 65 305 95 L345 120 L385 215 L345 235 L320 175 L320 365 L180 365 L180 175 L155 235 L115 215 L155 120 Z" fill="#374151" stroke="#4b5563" stroke-width="4" stroke-linejoin="round"/><path d="M205 255 L295 255 L305 320 L195 320 Z" fill="#4b5563" opacity="0.5"/>
+  <text x="250" y="435" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">Hoodie Boxy Fleece Heritage</text>
+  <text x="250" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="11" letter-spacing="3" fill="#94a3b8" text-anchor="middle">AY SHOP COLLECTION</text>
+</svg>

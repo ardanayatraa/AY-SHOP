@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eff6ff" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="url(#bgGrad)" />
+  <circle cx="250" cy="230" r="165" fill="#3b82f6" opacity="0.12" />
+  <path d="M165 110 L215 95 Q250 120 285 95 L335 110 L380 175 L340 205 L315 170 L315 360 L185 360 L185 170 L160 205 L120 175 Z" fill="#1e3a8a" stroke="#3b82f6" stroke-width="4" stroke-linejoin="round"/><path d="M215 95 Q250 135 285 95" fill="none" stroke="#eff6ff" stroke-width="5"/>
+  <text x="250" y="435" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">Basic Crewneck Tee Nusantara</text>
+  <text x="250" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="11" letter-spacing="3" fill="#94a3b8" text-anchor="middle">AY SHOP COLLECTION</text>
+</svg>
