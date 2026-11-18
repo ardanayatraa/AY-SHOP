@@ -102,6 +102,8 @@ class AuthController extends Controller
 
     public function logout(Request $request)
     {
+        // The embedded chat's token ends with the session.
+        $request->user()?->tokens()->where('name', 'mcp-hub-chat')->delete();
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();

@@ -177,6 +177,7 @@
             &copy; {{ date('Y') }} AY SHOP. Dibuat dengan Laravel &amp; Tailwind CSS.
         </div>
     </footer>
+    <x-hub-chat />
 </body>
 </html>
 
