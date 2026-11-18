@@ -52,9 +52,13 @@
                class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition {{ request()->routeIs('seller.store*') ? 'bg-amber-400 text-zinc-900 font-semibold' : 'text-stone-300 hover:bg-zinc-800 hover:text-white' }}">
                 <span>Pengaturan Toko</span>
             </a>
-            <a href="{{ url(config('mcp-hub.web.prefix', 'mcp-hub')) }}"
+            <a href="{{ route('mcp-hub.chat.show') }}"
                class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition text-stone-300 hover:bg-zinc-800 hover:text-white">
-                <span>MCP Hub</span>
+                <span>Chat AI (MCP)</span>
+            </a>
+            <a href="{{ route('mcp-hub.settings.show') }}"
+               class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition text-stone-300 hover:bg-zinc-800 hover:text-white">
+                <span>Pengaturan MCP Hub</span>
             </a>
         </nav>
 
