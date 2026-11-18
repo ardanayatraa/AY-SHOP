@@ -18,6 +18,11 @@ return [
     'commands' => ['enabled' => false, 'ttl' => 300],
     'exports' => ['enabled' => false, 'ttl' => 600, 'connection' => null, 'queue' => 'default'],
     'maintenance' => ['scheduled_prune' => true],
+    // The Hub's embedded chat (seller center and shop). Empty widget id turns it off.
+    'embed' => [
+        'script' => env('MCP_HUB_EMBED_SCRIPT', 'https://mcp1.texcel.biz.id/api/embed/v1/embed.js'),
+        'widget' => env('MCP_HUB_EMBED_WIDGET', 'w_psZZecxYXD8niuFX7hjR'),
+    ],
     'web' => ['enabled' => true, 'prefix' => 'mcp-hub', 'guard' => null,
         'manage_gate' => 'mcp-hub.manage', 'chat_gate' => 'mcp-hub.chat', 'export_gate' => 'mcp-hub.export'],
     'actor_resolver' => \App\Mcp\ActorResolver::class,

@@ -111,6 +111,7 @@
             @yield('content')
         </main>
     </div>
+    <x-hub-chat />
 </body>
 </html>
 
