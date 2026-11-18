@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\User;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,6 +21,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Gate::define('mcp-hub.manage', fn (User $user): bool => $user->role === 'admin' || $user->isSeller());
+        Gate::define('mcp-hub.chat', fn (User $user): bool => true);
+        Gate::define('mcp-hub.export', fn (User $user): bool => $user->role === 'admin' || $user->isSeller());
     }
 }
