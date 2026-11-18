@@ -35,12 +35,10 @@
                             name="q"
                             value="{{ request('q') }}"
                             placeholder="Cari kaos, kemeja linen, hoodie, dress..."
-                            class="w-full pl-4 pr-10 py-2 text-sm bg-stone-100 border border-stone-200 rounded-full focus:outline-none focus:bg-white focus:border-zinc-900 transition"
+                            class="w-full pl-4 pr-16 py-2 text-sm bg-stone-100 border border-stone-200 rounded-full focus:outline-none focus:bg-white focus:border-zinc-900 transition"
                         >
-                        <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-900" aria-label="Cari">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-                            </svg>
+                        <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 text-xs font-semibold text-zinc-600 hover:text-zinc-900 cursor-pointer">
+                            Cari
                         </button>
                     </div>
                 </form>
@@ -57,19 +55,16 @@
                     <!-- Menu Seller -->
                     @auth
                         @if(auth()->user()->isSeller())
-                            <a href="{{ route('seller.dashboard') }}" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200 hover:bg-amber-100 transition text-xs sm:text-sm font-semibold">
-                                <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18l-1 7H4L3 3zm1 7v10h16V10M9 20v-6h6v6"/>
-                                </svg>
+                            <a href="{{ route('seller.dashboard') }}" class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200 hover:bg-amber-100 transition text-xs sm:text-sm font-semibold">
                                 <span>Menu Seller</span>
                             </a>
                         @else
-                            <a href="{{ route('seller.register') }}" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-stone-100 text-zinc-800 border border-stone-200 hover:bg-stone-200 transition text-xs sm:text-sm font-semibold">
+                            <a href="{{ route('seller.register') }}" class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-stone-100 text-zinc-800 border border-stone-200 hover:bg-stone-200 transition text-xs sm:text-sm font-semibold">
                                 <span>Buka Toko</span>
                             </a>
                         @endif
                     @else
-                        <a href="{{ route('login') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200 hover:bg-amber-100 transition text-xs sm:text-sm font-semibold">
+                        <a href="{{ route('login') }}" class="inline-flex items-center px-3 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200 hover:bg-amber-100 transition text-xs sm:text-sm font-semibold">
                             <span>Menu Seller</span>
                         </a>
                     @endauth
@@ -78,12 +73,10 @@
                     @php
                         $cartCount = collect(session('cart', []))->sum('quantity');
                     @endphp
-                    <a href="{{ route('cart.index') }}" class="relative p-2 text-zinc-700 hover:text-zinc-900 transition" title="Keranjang Belanja">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
-                        </svg>
+                    <a href="{{ route('cart.index') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-stone-200 text-zinc-700 hover:text-zinc-900 hover:bg-stone-100 transition text-xs sm:text-sm font-medium">
+                        <span>Keranjang</span>
                         @if($cartCount > 0)
-                            <span class="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 rounded-full bg-zinc-900 text-white text-[10px] font-bold flex items-center justify-center">
+                            <span class="min-w-[18px] h-[18px] px-1.5 rounded-full bg-zinc-900 text-white text-[10px] font-bold flex items-center justify-center">
                                 {{ $cartCount }}
                             </span>
                         @endif

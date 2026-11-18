@@ -27,7 +27,7 @@
         <div class="bg-white border border-stone-200 rounded-2xl p-5">
             <p class="text-xs font-medium text-zinc-500">Total Pakaian Terjual</p>
             <p class="text-2xl font-bold text-zinc-900 mt-1">{{ $totalSold }} <span class="text-sm font-normal text-zinc-400">pcs</span></p>
-            <p class="text-xs text-zinc-500 mt-2">Rating Toko: ★ {{ number_format($seller->rating, 1) }}</p>
+            <p class="text-xs text-zinc-500 mt-2">Rating Toko: {{ number_format($seller->rating, 1) }}/5</p>
         </div>
     </div>
 

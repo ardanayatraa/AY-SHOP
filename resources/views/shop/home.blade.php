@@ -61,9 +61,8 @@
             @foreach($categories as $category)
                 <a href="{{ route('shop.catalog', ['category' => $category->slug]) }}"
                    class="bg-white border border-stone-200 rounded-2xl p-4 hover:border-zinc-900 hover:shadow-sm transition text-center group">
-                    <div class="text-2xl mb-2">{{ $category->icon }}</div>
                     <p class="font-semibold text-sm text-zinc-900 group-hover:text-amber-700 transition">{{ $category->name }}</p>
-                    <p class="text-xs text-zinc-500 mt-0.5">{{ $category->products_count }} produk</p>
+                    <p class="text-xs text-zinc-500 mt-1">{{ $category->products_count }} produk</p>
                 </a>
             @endforeach
         </div>
@@ -112,7 +111,7 @@
                             @endif
                         </div>
                         <h3 class="font-bold text-zinc-900">{{ $seller->store_name }}</h3>
-                        <p class="text-xs text-zinc-500 mt-0.5">{{ $seller->city }} &bull; ★ {{ number_format($seller->rating, 1) }}</p>
+                        <p class="text-xs text-zinc-500 mt-0.5">{{ $seller->city }} &bull; Rating {{ number_format($seller->rating, 1) }}/5</p>
                         <p class="text-xs text-zinc-600 mt-2 line-clamp-2 leading-relaxed">{{ $seller->description }}</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-xs font-medium text-zinc-700">

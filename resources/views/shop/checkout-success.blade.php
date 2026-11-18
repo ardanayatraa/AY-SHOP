@@ -5,8 +5,8 @@
 @section('content')
 <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
     <div class="bg-white border border-stone-200 rounded-3xl p-8 text-center space-y-4">
-        <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto text-2xl font-bold">
-            ✓
+        <div class="inline-block px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold tracking-wider uppercase mx-auto">
+            Pesanan Berhasil
         </div>
         <h1 class="text-2xl font-bold text-zinc-900">Terima Kasih! Pesanan Anda Diterima</h1>
         <p class="text-sm text-zinc-600">

@@ -135,7 +135,7 @@
                                     <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 text-[10px] font-semibold">Verified</span>
                                 @endif
                             </div>
-                            <p class="text-xs text-zinc-500">{{ $product->seller->city }} &bull; ★ {{ number_format($product->seller->rating, 1) }}</p>
+                            <p class="text-xs text-zinc-500">{{ $product->seller->city }} &bull; Rating {{ number_format($product->seller->rating, 1) }}/5</p>
                         </div>
                     </div>
                     <a href="{{ route('shop.seller', $product->seller->slug) }}" class="px-4 py-2 rounded-xl border border-stone-200 text-xs font-semibold text-zinc-700 hover:bg-stone-100 transition shrink-0">

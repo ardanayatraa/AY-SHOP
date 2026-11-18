@@ -18,7 +18,7 @@
                         </span>
                     @endif
                 </div>
-                <p class="text-sm text-stone-300 mt-1">{{ $seller->city }} &bull; ★ {{ number_format($seller->rating, 1) }} &bull; {{ $products->total() }} Produk</p>
+                <p class="text-sm text-stone-300 mt-1">{{ $seller->city }} &bull; Rating {{ number_format($seller->rating, 1) }}/5 &bull; {{ $products->total() }} Produk</p>
                 <p class="text-sm text-stone-400 mt-2 max-w-2xl">{{ $seller->description }}</p>
             </div>
         </div>

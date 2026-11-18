@@ -31,7 +31,7 @@
                         @endif
                     </div>
                     <h2 class="text-lg font-bold text-zinc-900">{{ $seller->store_name }}</h2>
-                    <p class="text-xs text-zinc-500 mt-0.5">{{ $seller->city }} &bull; Rating ★ {{ number_format($seller->rating, 1) }}</p>
+                    <p class="text-xs text-zinc-500 mt-0.5">{{ $seller->city }} &bull; Rating {{ number_format($seller->rating, 1) }}/5</p>
                     <p class="text-sm text-zinc-600 mt-3 leading-relaxed">{{ $seller->description }}</p>
                 </div>
                 <div class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between text-sm">
